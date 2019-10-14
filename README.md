@@ -1,4 +1,4 @@
-# @fvaa/radix
+# @xservice/radix
 
 fork from [find-my-way](https://github.com/delvedor/find-my-way).
 
@@ -11,15 +11,15 @@ Do you need a real-world example that uses this router? Check out [Fastify](http
 ## Install
 
 ```bash
-npm i @fvaa/radix
+npm i @xservice/radix
 ```
 
 <a name="usage"></a>
 ## Usage
 
 ```javascript
-import Monitor, { Request, Response } from '@fvaa/monitor';
-import Router from '@fvaa/radix';
+import Monitor, { Request, Response } from '@xservice/server';
+import Router from '@xservice/radix';
 const router = new Router();
 
 router.on('GET', '/', (req, res, params) => {
@@ -39,7 +39,7 @@ Instance a new router.<br>
 You can pass a default route with the option `defaultRoute`.
 
 ```js
-import Router from '@fvaa/radix';
+import Router from '@xservice/radix';
 const router = new Router({
   defaultRoute: (req, res) => {
     res.statusCode = 404
@@ -50,7 +50,7 @@ const router = new Router({
 
 Trailing slashes can be ignored by supplying the `ignoreTrailingSlash` option:
 ```js
-import Router from '@fvaa/radix';
+import Router from '@xservice/radix';
 const router = new Router({
   ignoreTrailingSlash: true
 })
@@ -64,18 +64,18 @@ router.on('GET', '/foo/', handler)
 You can set a custom length for parameters in parametric *(standard, regex and multi)* routes by using `maxParamLength` option, the default value is 100 characters.<br/>
 *If the maximum length limit is reached, the default route will be invoked.*
 ```js
-import Router from '@fvaa/radix';
+import Router from '@xservice/radix';
 const router = new Router({
   maxParamLength: 500
 })
 ```
 
-According to [RFC3986](https://tools.ietf.org/html/rfc3986#section-6.2.2.1), @fvaa/radix is case sensitive by default.
+According to [RFC3986](https://tools.ietf.org/html/rfc3986#section-6.2.2.1), @xservice/radix is case sensitive by default.
 You can disable this by setting the `caseSensitive` option to `false`:
 in that case, all paths will be matched as lowercase, but the route parameters or wildcards will maintain their original letter casing. You can turn off case sensitivity with:
 
 ```js
-import Router from '@fvaa/radix';
+import Router from '@xservice/radix';
 const router = new Router({
   caseSensitive: false
 })
@@ -88,7 +88,7 @@ The custom strategy object should contain next properties:
 The signature of the functions and objects must match the one from the example above.
 
 
-*Please, be aware, if you use custom versioning strategy - you use it on your own risk. This can lead both to the performance degradation and bugs which are not related to `@fvaa/radix` itself*
+*Please, be aware, if you use custom versioning strategy - you use it on your own risk. This can lead both to the performance degradation and bugs which are not related to `@xservice/radix` itself*
 
 <a name="on"></a>
 #### on(method, path, [opts], handler)

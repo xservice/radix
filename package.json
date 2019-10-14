@@ -1,10 +1,10 @@
 {
-  "name": "@fvaa/radix",
+  "name": "@xservice/radix",
   "version": "1.0.7",
   "description": "Page monitor and page behavior operation architecture",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/fvaa/radix.git"
+    "url": "git+ssh://git@github.com/xservice/radix.git"
   },
   "keywords": [
     "history"
@@ -12,9 +12,9 @@
   "author": "cevio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fvaa/radix/issues"
+    "url": "https://github.com/xservice/radix/issues"
   },
-  "homepage": "https://github.com/fvaa/radix#readme",
+  "homepage": "https://github.com/xservice/radix#readme",
   "scripts": {
     "dev": "webpack-dev-server --open --hot --progress --history-api-fallback",
     "build": "rollup -c"
