@@ -1,6 +1,6 @@
 {
   "name": "@xservice/radix",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Page monitor and page behavior operation architecture",
   "repository": {
     "type": "git",
