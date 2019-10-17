@@ -36,6 +36,6 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
-    "@xservice/server": "^1.0.12"
+    "@xservice/server": "^1.0.13"
   }
 }
