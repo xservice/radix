@@ -26,7 +26,7 @@
   ],
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "rollup": "^1.24.0",
     "rollup-plugin-typescript2": "^0.21.2",
     "ts-loader": "^6.2.0",
